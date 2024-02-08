@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h3 {
+    @apply mb-8 text-4xl font-bold text-darkGrayishBlue md:text-5xl;
+  }
+}
+
+.flex-center {
+  @apply flex items-center justify-center;
+}
+
+.section-container {
+  @apply mx-auto max-w-6xl text-center;
+}
+
+.button-container {
+  @apply flex w-full justify-center gap-5 text-xl text-white max-sm:flex-col;
+}
+
+body {
+  @apply bg-[url("/images/bg-header-desktop.png")] bg-no-repeat max-sm:bg-[url("/images/bg-header-mobile.png")] max-sm:bg-right-top;
+}
